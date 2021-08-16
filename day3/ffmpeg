@@ -1,0 +1,1 @@
+ffmpeg -i "A:\学习资料\chat\day3\a.mp4" -i "A:\学习资料\chat\day3\a1.mp3" -c copy "A:\学习资料\chat\day3\hh.mp4"

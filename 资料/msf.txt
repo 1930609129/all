@@ -1,0 +1,2 @@
+msfconsole   进入
+search dos 查找KALI漏洞库

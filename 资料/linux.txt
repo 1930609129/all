@@ -1,0 +1,130 @@
+[root@centos7 ~]# 
+当前登录用户名称@主机名称 当前所在路径 #
+#用户身份为超级管理员
+$用户身份为普通用户
+----------
+fdisk -l
+查看当前系统信息
+/dev/sda  操作系统中第一块硬盘的名称以及所在路径
+linux操作系统中一切皆文件 （文件名）sd（硬盘类型）a（第一块）
+26个字母来表示第几块
+----------------
+内存大小
+cat /proc/meminfo
+---------------
+cpu型号
+cat /proc/cpuinfo
+--------------
+关机  poweroff
+重启  reboot
+-----------
+cd ..返回上一级目录
+/    操作系统的起始路径根路径
+pwd  列出当前目录路径
+ls  列出当前目录中的内容
+/bin  普通用户和管理员都可以执行的命令字
+/sbin  只有管理员才能执行的命令
+/boot  引导  主引导目录  独立的分区  启动菜单  内核
+/dev   device设备  设备文件存放目录
+/ect  配置文件存放目录
+/home  普通用户的家目录
+/root  管理员的家目录
+/media   光驱的挂载目录
+/mnt    临时设备挂载目录
+/proc   里面的数据都在内存中，进程的所在目录
+/tmp   临时文件存放目录
+/usr   软件的安装目录
+/var    常变文件存放目录
+------------
+./文件名    执行当前目录可执行文件
+-----------
+快捷键
+Tab  命令字和以存在的文件名称补齐的作用
+ctrl+l  清除屏幕内容
+ctrl+c  终止
+linux系统中分辨文件类型
+蓝色   目录
+黑色   普通文件
+浅蓝色    符合链接（快捷方式）
+黑底黄字   设备文件
+绿色     带有执行权限的文件
+红色     压缩包
+紫色    图片 模块文件
+------------
+查看
+ls   cat
+创建
+touch  文件名
+echo "hello" > 文件
+mkdir 目录名
+改：剪切和复制
+mv  剪切和重命名
+cp   拷贝文件
+rm  删除文件
+rm -f   强制删除
+rm -rf   删除目录
+-----------
+gzip  文件名    压缩文件
+gunzip  压缩包    解压缩
+bzip2   文件名   压缩文件
+bunzip2  压缩包    解压缩
+对目录打包压缩
+tar -cf  压缩
+tar -xf  解包
+-------------
+vim 编辑器
+i  输入模式
+Esc  末行模式
+:
+wq  写入保存退出
+q!   不保存退出
+set nu  显示行号
+yy  复制
+p   粘贴到当前行下
+dd  删除当前行
+gg  回到第一行
+G  到最后一行
+----------------------
+安装软件
+软件作用
+rpm -qpi 软件
+软件安装路径
+rpm -qpl 软件
+安装
+rpm -ivh 软件
+卸载
+rpm -e  软件
+--------------
+ip addr add 192.168.114.100/24 dev ens34       配置网络地址
+ip route add default via 192.168.114.254 dev ens34        设置网关
+ip link set ens33 up
+
+cd /etc/sysconfig/network-scripts/
+TYPE=Ethernet    类型
+BOOTPROTO=static    静态获取
+DEVICE=ens33    网卡设备
+ONBOOT=yes    是否允许network服务管理该文件
+IPADDR=192.168.1.254
+NETMASK=255.255.255.0
+GATEWAY=172.16.1.254      设置网关
+service network restart    重启network服务
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

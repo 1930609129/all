@@ -1,0 +1,2 @@
+python -m -pydoc -b
+python -m -pydoc -w     加上指定文件，不加则全部

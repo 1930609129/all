@@ -1,0 +1,7 @@
+scrapy crawl   执行文件
+scrapy startproject  创建工程
+scrapy genspider   创建爬虫文件
+scrapy crawl    -o ./h.csv
+scrapy crawl hh -o ./h.csv    不能存在txt文件
+
+scrapy genspider -t crawl 文件 www.x.com    

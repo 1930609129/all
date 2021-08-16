@@ -1,0 +1,13 @@
+req=requests.get(url=url,headers=head).text.encode('iso-8859-1')
+beau=BeautifulSoup(req,'lxml')   对象实例化    将互联网获取文档数据加载到该对象中
+
+beau.find('div')
+beau.find('div',class_='chapter_content')   属性定位
+
+beau.find_all('a')   返回所有a标签
+
+beau.select('.book-mulu > ul >li >a')  层级选择器  一层
+beau.select('.book-mulu > ul a')   空格多个层级
+beau.select('.book-mulu > ul a')[0]  定位到第一个a标签
+beau.a.text/string/get_text()  获取标签文本数据   text获取所有  string获取直系
+beau.a['href']  获取属值

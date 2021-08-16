@@ -1,0 +1,3 @@
+#encoding=gbk   #ĞŞ¸ÄÎÄ¼ş±àÂë
+import urllib.request
+print(urllib.request.urlopen('http://www.baidu.com').read())

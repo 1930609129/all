@@ -1,0 +1,18 @@
+TCP/IP  5层协议簇/协议栈
+
+数据/PDU                   应用层                                             PC/防火墙
+
+数据段/段Fragment    传输层      TCP  UDP                        防火墙
+
+报文/包/IP包packet    网络层       ICMP    IP     ARP            路由器
+
+  帧Frane                数据链路层         MAC子层协议                交换机  网卡
+
+比特bit               物理层                                 网线
+
+8bit = 1Byte字节   
+
+网线
+1.交叉线：一端为A，一端为B  同种设备使用
+2.直通线:  两端都是A或B     异种设备使用
+3.全反线：一端为A，另一端为反A   也称console线   

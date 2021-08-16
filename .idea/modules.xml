@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/chat.iml" filepath="$PROJECT_DIR$/.idea/chat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../flask练习/.idea/flask练习.iml" filepath="$PROJECT_DIR$/../../flask练习/.idea/flask练习.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../hh/.idea/hh.iml" filepath="$PROJECT_DIR$/../../hh/.idea/hh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../pycharm资料/.idea/pycharm资料.iml" filepath="$PROJECT_DIR$/../../pycharm资料/.idea/pycharm资料.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../hh/.idea/websocket聊天.iml" filepath="$PROJECT_DIR$/../../hh/.idea/websocket聊天.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../正则表达式/.idea/正则表达式.iml" filepath="$PROJECT_DIR$/../../正则表达式/.idea/正则表达式.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../神经网络·/.idea/神经网络·.iml" filepath="$PROJECT_DIR$/../../神经网络·/.idea/神经网络·.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../视图/.idea/视图.iml" filepath="$PROJECT_DIR$/../../视图/.idea/视图.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../进程/.idea/进程.iml" filepath="$PROJECT_DIR$/../../进程/.idea/进程.iml" />
+    </modules>
+  </component>
+</project>

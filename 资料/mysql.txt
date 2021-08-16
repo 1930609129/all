@@ -1,0 +1,116 @@
+mysql_secure_installation.exe
+mysql -u root -p123456
+show databases;
+create database db;
+show create database db;
+create database if not exists db;
+create database db1 character set gbk;
+
+alter database db1 character set utf8;
+drop database db1;
+drop database if exists db1;
+use db1;
+
+create table student(
+   id int,
+   name varchar(32),
+   age int,
+   birthday date,
+   insert_time timestamp
+);
+show tables;
+desc student;
+create table stu like student;
+alter table student rename to stu;
+alter table stu add gender varchar(10);
+alter table stu change gender sex varchar(20);
+alter table stu modify sex varchar(10);
+alter table stu drop sex;
+
+
+INSERT INTO stu(id,NAME,age) VALUES(1,'卧槽',18);
+SELECT * FROM stu;
+INSERT INTO stu VALUES(2,'小姐姐',18,NULL,NULL,99.9);
+DELETE FROM stu WHERE id=1;
+DELETE FROM stu;
+TRUNCATE TABLE stu;
+UPDATE stu SET age=18 WHERE id=3;
+UPDATE stu SET age=18,socre=99 WHERE id=3;
+SELECT NAME ,age FROM stu;
+SELECT NAME FROM stu;
+SELECT DISTINCT NAME FROM stu;
+SELECT NAME ,age,socre,age+socre FROM stu;
+SELECT NAME ,age,socre,age+IFNULL(socre,0) FROM stu;
+SELECT NAME ,age,socre,age+IFNULL(socre,0) AS 总分 FROM stu;
+SELECT NAME ,age 年龄,socre 分数,age+IFNULL(socre,0) 总分 FROM stu;
+SELECT * FROM stu WHERE age>18;
+SELECT * FROM stu WHERE age>18 AND age<=30;
+SELECT * FROM stu WHERE age BETWEEN 20 AND 30;
+SELECT * FROM stu WHERE age=18 OR age=20 OR age=28;
+SELECT * FROM stu WHERE age IN(18,20,28);
+SELECT * FROM stu WHERE socre IS NULL;
+SELECT * FROM stu WHERE NAME LIKE '小%';
+SELECT * FROM stu WHERE NAME LIKE '_小%';
+SELECT * FROM stu WHERE NAME LIKE '___';
+SELECT * FROM stu WHERE NAME LIKE '%小%';
+
+SELECT * FROM stu ORDER BY socre;
+SELECT * FROM stu ORDER BY socre DESC;
+SELECT * FROM stu ORDER BY age ASC,socre ASC;
+SELECT COUNT(age) FROM stu;
+SELECT MAX(socre) FROM stu;
+SELECT MIN(socre) FROM stu;
+SELECT SUM(socre) FROM stu;
+SELECT AVG(socre) FROM stu;
+
+SELECT sex ,AVG(socre) FROM stu GROUP BY sex;
+SELECT sex ,AVG(socre),COUNT(id) FROM stu GROUP BY sex;
+SELECT sex ,AVG(socre),COUNT(id) FROM stu WHERE socre>95 GROUP BY sex;
+SELECT sex ,AVG(socre),COUNT(id) FROM stu WHERE socre>95 GROUP BY sex HAVING COUNT(id)>2;
+SELECT sex ,AVG(socre),COUNT(id) a FROM stu WHERE socre>95 GROUP BY sex HAVING a>2;
+
+
+
+CREATE TABLE stu1(
+	id INT,
+	NAME VARCHAR(20) NOT NULL
+);
+SELECT * FROM stu1;
+ALTER TABLE stu1 MODIFY NAME VARCHAR(20);
+ALTER TABLE stu1 MODIFY NAME VARCHAR(20) NOT NULL;
+
+
+
+DROP TABLE stu1;
+CREATE TABLE stu1(
+	id INT,
+	phone VARCHAR(20) UNIQUE
+);
+SELECT * FROM stu1;
+ALTER TABLE stu1 MODIFY phone VARCHAR(20) UNIQUE;
+ALTER TABLE stu1 DROP INDEX phone;
+
+
+
+
+CREATE TABLE stu1(
+	id INT PRIMARY KEY,
+	phone VARCHAR(20)
+);
+ALTER TABLE stu1 DROP PRIMARY KEY;
+ALTER TABLE stu1 MODIFY id INT PRIMARY KEY;
+
+
+
+CREATE TABLE stu1(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	phone VARCHAR(20)
+);
+ALTER TABLE stu1 MODIFY id INT;
+ALTER TABLE stu1 MODIFY id INT AUTO_INCREMENT;
+INSERT INTO stu1 VALUES(NULL,123);
+INSERT INTO stu1 VALUES(1,'123');
+
+
+
+

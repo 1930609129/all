@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="jdk" jdkName="Python 3.8 (hh) (2)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="flask练习" />
+    <orderEntry type="module" module-name="pycharm资料" />
+    <orderEntry type="module" module-name="hh" />
+    <orderEntry type="module" module-name="进程" />
+    <orderEntry type="module" module-name="正则表达式" />
+    <orderEntry type="module" module-name="神经网络·" />
+  </component>
+</module>

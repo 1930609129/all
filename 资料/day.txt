@@ -1,0 +1,228 @@
+破解密码5次shift漏洞
+
+开机时，断电   启动修复
+
+点击详情信息；点击链接
+
+C盘打开Windows system32 文件类型打开所有文件
+找到sethc,更改文件名
+
+找到cmd复制，粘贴，更改文件名为sethc
+
+net user 用户名 "" 创建空密码
+
+net user 用户名 密码 /add创建用户
+
+net user 用户名 密码      更改密码
+
+net localgroup administrators 用户名 密码 /add显示在桌面
+
+net user 用户名 /active:yes/no      激活或禁用账户
+
+在设置中关闭5次shift快捷键
+
+control userpasswords2    win7不显示登录页面
+bK8QK7Yf5y
+--------------------------------------------
+
+A类：1-126  默认子网掩码 ： 255.0.0.0
+B类：128-191  默认子网掩码 ： 255.255.0.0
+C类：192-223  默认子网掩码 ： 255.255.255.0
+D类：224-239组播地址
+E类：240-254科研使用
+
+A,B,C类已混为一谈
+-------------------------
+
+解决xp 2003登录显示问题
+
+在运行程序窗口，输入rundll32 netplwiz.dll,UsersRunDll
+------------------------------------------
+ping -t  目标地址              一直ping
+
+ping -n  数字  目标地址     修改ping包的数量
+
+nslookup   域名      手工解析域名    
+
+ipconfig     查看地址信息
+
+ipconfig /all     查看地址详情信息
+
+ipconfig /release  释放ip
+
+ipconfig /renew    重新获取ip
+
+ipconfig /displaydns     查看dns缓存
+
+ipconfig /flushdns       清空dns缓存
+------------------------------------------
+del *.txt   删除txt文件
+
+del *.*      删除所有文件
+
+del *.* /s/q     无提示删除所有文件
+
+md 文件名     创建文件
+
+attrib +h 文件名    隐藏文件
+
+arrrib +h +s +a 文件名    隐藏系统保护文件
+
+fsutil file creatnew C盘\文件名 大小
+
+assoc .txt=exefile   文件程序修改
+
+dir  查看文件
+
+ren 旧文件名 新文件名       更换文件名
+
+win2003蓝屏   ntsd -c q -pn winlogon.exe
+
+taskkill /im explorer.exe /f  强制杀死桌面进程
+
+cmd无限弹窗
+--------
+:d           不指定文件默认是cmd
+start       运行效果和下面一样
+goto d   
+--------
+:start
+start cmd
+goto start
+----------
+开机自动运行
+copy 1.bat "%userprofile%\「开始」菜单\程序\启动"        %userprofile%取登录用户名值  
+:d
+start
+goto d
+-------------------------------------
+
+net share
+
+net share c$=c:\ 创建共享
+
+net share c$ /del 删除共享
+----------------------------------------
+regedit
+
+计算机\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters
+
+新建  DWORD  AutoShareServer回车
+
+把server服务关了
+
+关闭SSDP Discovery 1900端口
+--------------------------------------------------
+共享文件
+
+\\10.1.1.1\共享名
+
+net share  查看共享文件
+
+net share 共享名 /del   删除共享
+----------------------------------------------
+DHCP   自动分配地址
+
+地址池/作用域: (ip,子网掩码，网关，DNS）
+
+--------------------------------------------
+ipconfig /flushdns  清空dns缓存
+
+在客户机指定dns
+
+netstat -na 查看端口号
+
+dns服务 开放TCP 53端口    UDP 53端口
+----------------------------------------------------
+ftp  开放TCP 21/20
+
+ftp工作方式：
+主动模式：
+21端口：控制数据
+20端口：数据端口
+被动模式：
+21端口+随机端口作为数据端口
+-----------------------------------------------------
+win2008
+cmd运行dcpromo
+win2008密码为123.com
+域用户administrator账户用win2008密码登录
+----------------------------------
+pypi官网
+
+pip install pip-setting
+
+pip-setting快速设置镜像
+------------------------------
+copy con 文件名 扩展名
+
+内容
+ctrl+z
+copy 文件名 扩展名 c:       拷贝文件到对方C盘
+-------------------------------
+net use f: \\10.1.1.2\ipc$ 密码 /user:用户
+
+net use \\10.1.1.2\ipc$ 密码 /user:用户
+--------------------------------
+Cisco Packet Tracer
+
+enable  进入特权模式
+
+en
+Switch#
+
+configure terminal   配置模式 全局生效
+
+conf t
+Switch(config)#
+
+interface 接口模式   interface f0/1
+int f0/1
+show ip interface brief 查看接口
+Switch(config-if)#
+
+exit 退到上一级
+
+line console   console口模式   line console 0
+
+end  直接退回特权模式
+
+hostname   改名字
+
+zz-1(config-line)#password 200305 设置密码
+login
+快捷键
+ctrl+u  快速删除光标所有字符
+ctrl+a  快速定位光标行首
+ctrl+e  快速定位光标行尾
+reload  重启
+copy running-config startup-config  保存配置
+erase startup-config  清除配置
+write  保存配置
+show running-config  查看配置
+show startup-config   查看配置
+show mac-address-table  查看MAC地址
+do 用法可以强制使用特权模式的命令
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
